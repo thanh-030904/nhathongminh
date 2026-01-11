@@ -400,10 +400,10 @@
 
                 <!-- LED 2 -->
                 <div class="control-item">
-                    <div class="control-icon">💡</div>
-                    <div class="control-name">LED 2</div>
+                    <div class="control-icon">🚪</div>
+                    <div class="control-name">servo</div>
                     <label class="switch">
-                        <input type="checkbox" id="led2" onchange="controlDevice('led2', 'V2', this.checked)">
+                        <input type="checkbox" id="servo" onchange="controlDevice('servo', 'V5', this.checked)">
                         <span class="slider"></span>
                     </label>
                     <div class="status-text off" id="led2Status">OFF</div>
@@ -610,7 +610,7 @@
         async function syncDeviceStates() {
             const devices = [
                 { id: 'led1', pin: 'V1' },
-                { id: 'led2', pin: 'V2' },
+                { id: 'servo', pin: 'V5' },
                 { id: 'led3', pin: 'V3' },
                 { id: 'fan', pin: 'V9' }
             ];
